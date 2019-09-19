@@ -50,7 +50,7 @@ gulp.task('clean', ()=>{
   return del('dist');
 });
 
-gulp.task('build', gulp.series(['clean', 'scripts', 'styles']));
+gulp.task('build', gulp.series(['clean', 'scripts', 'styles', 'images']));
 
 gulp.task('serveit', serve('./'));
 
